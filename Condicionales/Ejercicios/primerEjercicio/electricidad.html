@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var unidades = prompt("Ingrese la cantidad de consumo")
+        var cantidadGratuita = 100
+        var precio = 0
+        if(unidades >= 0 && unidades <= 100){
+            console.log("El precio a pagar es 0")
+        }
+        else if(unidades > 100 && unidades <= 200){
+            precio = (unidades - cantidadGratuita) * 5
+            console.log(precio)
+        }
+        else if(unidades > 200){
+            unidades = unidades - cantidadGratuita - 100
+            precio = 500 + unidades * 10
+            console.log("El precio a pagar es: $" + precio)
+        }
+        else{
+            console.log("El valor ingresado no es correcto")
+        }
+    </script>
+</body>
+</html>
