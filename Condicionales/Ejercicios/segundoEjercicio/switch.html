@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num = parseInt(prompt("Ingrese un numero del 1 al 5"))
+
+        switch(num){ //undefined, null , NaN, 0 , "" (String vacío)
+            case 1:
+                console.log("Num tiene valor 1")
+                break
+            case 2:
+                console.log("Num tiene valor 2")
+                break
+            case 3:
+                console.log("Num tiene valor 3")
+                break
+            case 4:
+                console.log("Num tiene valor 4")
+                break
+            case 5:
+                console.log("Num tiene valor 5")
+                break
+            default:    
+                console.log("Num no tiene valor del 1 al 5")
+        }//Sintaxis Simple
+
+        switch(num){
+            case 1:
+            case 3:
+            case 5:
+                console.log("Numero impar")
+                break
+            case 2:
+            case 4:
+                console.log("Numero par")
+                break
+            default:
+                console.log("Num no tiene valor del 1 al 5")
+        }//Sintaxis Multiple
+    </script>
+</body>
+</html>
