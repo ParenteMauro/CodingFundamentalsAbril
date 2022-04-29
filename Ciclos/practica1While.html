@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var cantidadExamenes = parseInt(prompt("Ingrese la cantidad de examenes del alumno"))
+        var examen = 1
+        var suma = 0
+        while(examen<=cantidadExamenes){
+            let nota = parseFloat(prompt(`Ingrese la nota del examen N ${examen}`))
+            console.log(nota)
+
+            console.log(`Este es el examen ${examen} y la cantidad máximas es ${cantidadExamenes}`)
+            if(nota>=0 && nota<=10){
+                suma += nota
+                console.log(`Suma numero ${examen} es igual a = ${suma}`)
+                examen++
+            }else{
+                alert("Ingrese una nota del 0 al 10")
+            }
+        }
+
+        console.log(`terminó el programa, examen ahora vale ${examen} y cantidad de examenes vale ${cantidadExamenes}`)
+        var promedio = suma/cantidadExamenes
+
+        console.log(`El promedio del alumno es ${promedio.toFixed(2)}`)
+
+    </script>
+</body>
+</html>
